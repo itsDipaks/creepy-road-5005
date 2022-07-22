@@ -1,0 +1,32 @@
+.option {
+display: flex; 
+width: 30%;
+/* border: 1px solid black; */
+justify-content: space-evenly;
+align-items: center;
+font-size: 30px;
+}
+.option li{
+    list-style: none;
+}
+ .nav{
+    display: flex;
+    height: 10vh;
+    border: 1px solid rgb(245, 16, 16);
+ }
+.icondiv{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icondiv img{
+    width: 5%;
+    height: 25%;
+}
+
+
+.logodiv img{
+    width: 60%;
+}
