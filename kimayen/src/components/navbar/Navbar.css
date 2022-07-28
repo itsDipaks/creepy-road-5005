@@ -11,11 +11,12 @@ font-size: 30px;
 }
  .nav{
     display: flex;
+    justify-content: space-between;
     height: 10vh;
-    border: 1px solid rgb(245, 16, 16);
+    border-bottom: 1px solid black;
  }
 .icondiv{
-    width: 40%;
+    width: 30%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -24,9 +25,16 @@ font-size: 30px;
 .icondiv img{
     width: 5%;
     height: 25%;
+    
 }
 
 
 .logodiv img{
-    width: 60%;
+   
+    width: 45%;
+    margin: auto;
+}
+.logodiv{
+    display: flex;
+    align-items: center;
 }

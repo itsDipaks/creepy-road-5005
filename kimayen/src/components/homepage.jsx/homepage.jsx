@@ -1,56 +1,62 @@
 import { Container, Heading, HStack, VStack,Box,Image,Text,Button} from '@chakra-ui/react'
 import "./homepage.css"
+import start from "../images/start.png"
+import kimm from "../images/kimm.png"
 const Homepage=()=>{
     return(
 <div className='div'>
-<VStack>
-<Heading  size='xl' >KIMAYE RECOMMENDS</Heading>
+
+<Image w='100%' style={{margin:"auto" ,marginTop:"20px",marginBottom:"50px"}} src={start}/>
+{/* <VStack>
+<Heading   >KIMAYE RECOMMENDS</Heading>
 <Heading  size='md'>A Handpicked and Curated Fruit offering</Heading>
-</VStack>
-<Container maxW='1050px' color='black'>
-    <HStack>
-     
-    <Box>
-            <VStack  spacing={4}>
-        <Image boxSize='350px'  style={{borderRadius:"30px"}} objectFit='cover' src='https://images.unsplash.com/photo-1655389158915-ed128af11596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'/>
-        <Heading>ALL FRUITS</Heading>
+</VStack> */}
+<Image w='40%' style={{margin:"auto" ,marginBottom:"50px"}} src={kimm}/>
+<Container maxW='1220px' color='black' >
+    <HStack >
+         <Box w='50%' H='10%'>
+         <VStack >
+        <Image boxSize='550px' className='img'  objectFit='cover' src='https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_570x.png?v=1614338437 '/>
+        <Heading className='heading' >ALL FRUITS</Heading>
         <Text>Pick and choose from a wide range of delicious fruits</Text>
-        <Button colorScheme='red' variant='solid'>Shop Now  </Button>
+        <Button colorScheme='red' className='shopbtn' variant='solid'>Shop Now  </Button>
         </VStack>
-      
         </Box>
        
-        <Box>
-            <VStack  spacing={4}>
-        <Image boxSize='350px'   objectFit='cover' src='https://images.unsplash.com/photo-1655389158915-ed128af11596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'/>
-        <Heading>ALL FRUITS</Heading>
-        <Text>Pick and choose from a wide range of delicious fruits</Text>
-        <Button colorScheme='red' variant='solid'>Shop Now  </Button>
+        <Box  w='50%'>
+        <VStack >
+        <Image boxSize='550px'  className='img'   objectFit='cover' src='	https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_570x.png?v=1614338730'/>
+        <Heading className='heading'>FRESH CUTS</Heading>
+        <Text>We want to spoon-feed you… quite literally</Text>
+        <Button className='shopbtn' colorScheme='red' variant='solid'>Shop Now  </Button>
         </VStack>
-      
         </Box>
-
+        
     </HStack>
-    <HStack>
+
+
+    <hr />
+    <HStack style={{marginTop:"50px"}}>
      
-     <Box>
-             <VStack  spacing={4}>
-         <Image boxSize='350px'   objectFit='cover' src='https://images.unsplash.com/photo-1655389158915-ed128af11596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'/>
-         <Heading>ALL FRUITS</Heading>
-         <Text>Pick and choose from a wide range of delicious fruits</Text>
-         <Button colorScheme='red' variant='solid'>Shop Now  </Button>
+     <Box  w='50%'>
+             <VStack  spacing={1}>
+         <Image boxSize='550px' className='img'  objectFit='cover' src='	https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_570x.jpg?v=1614339080'/>
+         <Heading className='heading'>FRUIT COMBOS</Heading>
+         <Text>Indulge in fruit combinations created by us</Text>
+         <Button  className='shopbtn' colorScheme='red' variant='solid'>Shop Now  </Button>
          </VStack>
        
          </Box>
         
-         <Box>
-             <VStack  spacing={4}>
-         <Image boxSize='350px'   objectFit='cover' src='https://images.unsplash.com/photo-1655389158915-ed128af11596?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'/>
-         <Heading>ALL FRUITS</Heading>
-         <Text>Pick and choose from a wide range of delicious fruits</Text>
-         <Button colorScheme='red' variant='solid'>Shop Now  </Button>
+         <Box  w='50%'>
+             <VStack  spacing={1}>
+         <Image boxSize='550px' className='img'  objectFit='cover' src='https://cdn.shopify.com/s/files/1/0449/5225/6667/files/2I8A6078_570x.jpg?v=1631516874
+'/>
+         <Heading className='heading'>GIFTS BY KIMAYE</Heading>
+         <Text>Healthy & memorable gifts for your loved ones</Text>
+         <Button colorScheme='red ' className='shopbtn' variant='solid'>Shop Now  </Button>
          </VStack>
-       
+        
          </Box>
  
      </HStack>

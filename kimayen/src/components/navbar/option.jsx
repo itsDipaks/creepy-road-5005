@@ -6,10 +6,13 @@ function Option(){
  
 <ul className="option" >
     <li><Menu>
-  <MenuButton as={Button} >
-  SHOP
+  <MenuButton as={Button} style={{backgroundColor:"white",color:"black" ,border:"1px solid grey"}}>
+  SHOP 🢛
+
+
+
   </MenuButton>
-  <MenuList>
+  <MenuList style={{fontSize:"18px"}}>
     <MenuItem>All Fruits</MenuItem>
     <MenuItem>Fresh Cuts</MenuItem>
     <MenuItem>Fruit Combos</MenuItem>
@@ -21,10 +24,10 @@ function Option(){
   </MenuList>
 </Menu>  </li>
     <li><Menu>
-  <MenuButton as={Button} >
-  LEARN
+  <MenuButton as={Button} style={{backgroundColor:"white",color:"black" ,border:"1px solid black"}}>
+  LEARN 🢛
   </MenuButton>
-  <MenuList>
+  <MenuList style={{fontSize:"18px"}}>
     <MenuItem>OUR STORY</MenuItem>
     <MenuItem>WHY KIMAYE</MenuItem>
     <MenuItem>TRACEABILITY</MenuItem>
@@ -33,11 +36,11 @@ function Option(){
   </MenuList>
 </Menu>  </li>
     <li><Menu>
-  <MenuButton as={Button} >
+  <MenuButton as={Button} style={{backgroundColor:"white",color:"black" ,border:"1px solid black"}} >
   GROW
   </MenuButton>
 
-</Menu>  </li>
+</Menu> </li>
   
 </ul>  
 
@@ -45,3 +48,4 @@ function Option(){
     )
 }
 export default Option;
+
